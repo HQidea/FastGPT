@@ -426,8 +426,8 @@ projects 目录下为 FastGPT 应用代码。其中 app 为 FastGPT 核心应用
 MongoDB：用于存储除了向量外的各类数据
 PostgreSQL/Milvus：存储向量数据
 OneAPI: 聚合各类 AI API，支持多模型调用 （任何模型问题，先自行通过 OneAPI 测试校验）
-推荐配置 linkPgVector版本 link体验测试首选
-环境 最低配置（单节点） 推荐配置 测试 2c2g 2c4g 100w 组向量 4c8g 50GB 4c16g 50GB 500w 组向量 8c32g 200GB 16c64g 200GB Milvus版本 link生产部署首选，对于千万级以上向量性能更优秀。
+推荐配置 linkPgVector版本 link非常轻量，适合数据量在 5000 万以下。
+环境 最低配置（单节点） 推荐配置 测试（可以把计算进程设置少一些） 2c4g 2c8g 100w 组向量 4c8g 50GB 4c16g 50GB 500w 组向量 8c32g 200GB 16c64g 200GB Milvus版本 link对于亿级以上向量性能更优秀。
 点击查看 Milvus 官方推荐配置
 环境 最低配置（单节点） 推荐配置 测试 2c8g 4c16g 100w 组向量 未测试 500w 组向量 zilliz cloud版本 linkMilvus 的全托管服务，性能优于 Milvus 并提供 SLA，点击使用 Zilliz Cloud。
 由于向量库使用了 Cloud，无需占用本地资源，无需太关注。
